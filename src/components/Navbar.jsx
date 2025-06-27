@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaGithub } from "react-icons/fa6";
+import { CgProfile } from "react-icons/cg";
 import { useAuth } from '../Context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
@@ -34,8 +34,8 @@ function Navbar() {
             className='flex items-center border rounded-full px-3 py-1 bg-green-600 hover:bg-green-700 transition-colors'
             onClick={handleClick}
           >
-            <FaGithub size={20} />
-            <span className='ml-2'>Github</span>
+           <CgProfile size={20}/>
+            <span className='ml-2'>profile</span>
           </button>
 
           {hidden && (
